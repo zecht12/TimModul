@@ -1,0 +1,19 @@
+body{
+    height: auto;
+    width: 100%;
+    margin: auto;
+    padding: auto;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 10%;
+}
+.nav-links{
+    display: flex;
+}
+.nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
+}

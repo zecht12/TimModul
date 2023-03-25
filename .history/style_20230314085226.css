@@ -1,0 +1,31 @@
+body{
+    height: auto;
+    width: 100%;
+    margin: auto;
+    padding: auto;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
+}
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: ;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+.nav__links{
+    list-style: none;
+}
+.nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav__links li a:hover{
+    color: #0088a9;
+}
