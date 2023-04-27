@@ -5,28 +5,28 @@ function testVariable() {
     var strText2 = document.getElementById("Pilihan").value;
     var strText3 = document.getElementById("Keterangan").value;
     if (strText === "") {
-        alert("Tolong isi nama anda");
+        alert("Please fill out the Full Name field.");
         document.getElementById("Formnama").style.color = "red";
         document.getElementById("Formnama").style.fontFamily = "Arial";
         document.getElementById("Formnama").style.fontSize = "larger"; 
     }
     else if(strText1 === ""){
-        alert("Tolong isi email anda");
+        alert("Please fill out the Email field.");
         document.getElementById("Formemail").style.color = "red";
         document.getElementById("Formemail").style.fontFamily = "Arial";
         document.getElementById("Formemail").style.fontSize = "larger"; 
     }
     else if(strText2 === ""){
-        alert("Tolong pilihlah pilihan yang tesedia");
+        alert("Please fill out the Email field.");
         document.getElementById("Pilihan").style.color = "red";
         document.getElementById("Pilihan").style.fontFamily = "Arial";
         document.getElementById("Pilihan").style.fontSize = "larger"; 
     }
     else if(strText3 === ""){
-        alert("tolong isi keterangan produk anda");
-        document.getElementById("Keterangan").style.color = "red";
-        document.getElementById("Keterangan").style.fontFamily = "Arial";
-        document.getElementById("Keterangan").style.fontSize = "larger"; 
+        alert("Please fill out the Email field.");
+        document.getElementById("Formemail").style.color = "red";
+        document.getElementById("Formemail").style.fontFamily = "Arial";
+        document.getElementById("Formemail").style.fontSize = "larger"; 
     }
     else {
         document.getElementById("displayName").innerHTML = strText;

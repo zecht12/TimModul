@@ -23,7 +23,7 @@ function testVariable() {
         document.getElementById("Pilihan").style.fontSize = "larger"; 
     }
     else if(strText3 === ""){
-        alert("tolong isi keterangan produk anda");
+        alert("Please fill out the Email field.");
         document.getElementById("Keterangan").style.color = "red";
         document.getElementById("Keterangan").style.fontFamily = "Arial";
         document.getElementById("Keterangan").style.fontSize = "larger"; 
