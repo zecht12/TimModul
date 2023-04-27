@@ -4,14 +4,10 @@
         var Pilihan = document.getElementById("Pilihan").value;
         var Keterangan = document.getElementById("Keterangan").value;
         var data = JSON.parse(localStorage.getItem("form-data")) || [];
-        if(Nama === "" || Email=== "" || Pilihan ==="" || Keterangan === ""){
-            alert("Tolong isi dengan benar ya!!!");
-        }
-        else{
-            data.push({ Nama: Nama, Email: Email, Pilihan: Pilihan, Keterangan: Keterangan });
-            localStorage.setItem("form-data", JSON.stringify(data));
-            displayData();
-        }
+        if(Nama === "" || Email=== "" || Pilihan ==="" Keterangan === )
+        data.push({ Nama: Nama, Email: Email, Pilihan: Pilihan, Keterangan: Keterangan });
+        localStorage.setItem("form-data", JSON.stringify(data));
+        displayData();
     }
 
     function displayData() {

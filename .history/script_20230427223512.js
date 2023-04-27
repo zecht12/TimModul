@@ -4,8 +4,11 @@
         var Pilihan = document.getElementById("Pilihan").value;
         var Keterangan = document.getElementById("Keterangan").value;
         var data = JSON.parse(localStorage.getItem("form-data")) || [];
-        if(Nama === "" || Email=== "" || Pilihan ==="" || Keterangan === ""){
-            alert("Tolong isi dengan benar ya!!!");
+        if(Nama === ""){
+            alert("Please fill out the Full Name field.");
+            document.getElementById("Nama").style.color = "red";
+            document.getElementById("Nama").style.fontFamily = "Arial";
+            document.getElementById("Nama").style.fontSize = "larger";
         }
         else{
             data.push({ Nama: Nama, Email: Email, Pilihan: Pilihan, Keterangan: Keterangan });

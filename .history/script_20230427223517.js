@@ -5,7 +5,7 @@
         var Keterangan = document.getElementById("Keterangan").value;
         var data = JSON.parse(localStorage.getItem("form-data")) || [];
         if(Nama === "" || Email=== "" || Pilihan ==="" || Keterangan === ""){
-            alert("Tolong isi dengan benar ya!!!");
+            alert("Please fill out the Full Name field.");
         }
         else{
             data.push({ Nama: Nama, Email: Email, Pilihan: Pilihan, Keterangan: Keterangan });
