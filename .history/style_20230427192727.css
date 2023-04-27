@@ -84,7 +84,7 @@ label {
     font: inherit;
     cursor: pointer;
 }
-.btnSubmit:hover{
+.Button:hover{
     border: 1px solid #0088a9;
     color: #0088a9;
     cursor: pointer;

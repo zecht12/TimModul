@@ -76,7 +76,7 @@ label {
     font-weight: bold;
     width: 130px;
 }
-.btnSubmit {
+.Button {
     padding: 10px;
     border: 1px solid black;
     background-color:aliceblue;
@@ -84,7 +84,7 @@ label {
     font: inherit;
     cursor: pointer;
 }
-.btnSubmit:hover{
+.Button:hover{
     border: 1px solid #0088a9;
     color: #0088a9;
     cursor: pointer;
