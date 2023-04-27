@@ -32,8 +32,5 @@
         KeteranganCell.innerHTML = data[i].Keterangan;
         }
     }
-    function deleteItems() {
-        localStorage.clear();
-    }
 
-    displayData();
+    

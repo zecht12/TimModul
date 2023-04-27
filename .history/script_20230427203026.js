@@ -1,11 +1,13 @@
     function saveData() {
         var Nama = document.getElementById("Nama").value;
-        var Email = document.getElementById("Email").value;
-        var Pilihan = document.getElementById("Pilihan").value;
-        var Keterangan = document.getElementById("Keterangan").value;
+        var email = document.getElementById("Email").value;
+        var choice = document.getElementById("choice").value;
+        var description = document.getElementById("description").value;
+
         var data = JSON.parse(localStorage.getItem("form-data")) || [];
-        data.push({ Nama: Nama, Email: Email, Pilihan: Pilihan, Keterangan: Keterangan });
+        data.push({ Nama: Nama, email: Email, choice: choice, description: description });
         localStorage.setItem("form-data", JSON.stringify(data));
+
         displayData();
     }
 
@@ -22,18 +24,13 @@
         for (var i = 0; i < data.length; i++) {
         var row = table.insertRow(-1);
         var NamaCell = row.insertCell(0);
-        var EmailCell = row.insertCell(1);
-        var PilihanCell = row.insertCell(2);
-        var KeteranganCell = row.insertCell(3);
+        var emailCell = row.insertCell(1);
+        var choiceCell = row.insertCell(2);
+        var descriptionCell = row.insertCell(3);
 
         NamaCell.innerHTML = data[i].Nama;
-        EmailCell.innerHTML = data[i].Email;
-        PilihanCell.innerHTML = data[i].Pilihan;
-        KeteranganCell.innerHTML = data[i].Keterangan;
+        emailCell.innerHTML = data[i].email;
+        choiceCell.innerHTML = data[i].choice;
+        descriptionCell.innerHTML = data[i].description;
         }
     }
-    function deleteItems() {
-        localStorage.clear();
-    }
-
-    displayData();

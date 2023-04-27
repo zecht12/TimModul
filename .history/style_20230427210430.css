@@ -138,6 +138,9 @@ textarea{
 .Social a:hover{
     transform: scale(110%);
 }
-.deleteItems:hover{
-    transform: scale(110%);
+.Pilihan:hover{
+    background-color: #2089dc;
 }
+.custom-select select {
+    display: none; /*hide original SELECT element:*/
+  }

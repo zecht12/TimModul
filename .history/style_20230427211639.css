@@ -139,5 +139,7 @@ textarea{
     transform: scale(110%);
 }
 .deleteItems:hover{
-    transform: scale(110%);
+    scal
+    color: #2089dc;
+    border-color: #2089dc;
 }

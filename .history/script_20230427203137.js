@@ -4,7 +4,7 @@
         var Pilihan = document.getElementById("Pilihan").value;
         var Keterangan = document.getElementById("Keterangan").value;
         var data = JSON.parse(localStorage.getItem("form-data")) || [];
-        data.push({ Nama: Nama, Email: Email, Pilihan: Pilihan, Keterangan: Keterangan });
+        data.push({ Nama: Nama, Email: Email, Pilihan: Pilihan, description: description });
         localStorage.setItem("form-data", JSON.stringify(data));
         displayData();
     }
@@ -24,16 +24,11 @@
         var NamaCell = row.insertCell(0);
         var EmailCell = row.insertCell(1);
         var PilihanCell = row.insertCell(2);
-        var KeteranganCell = row.insertCell(3);
+        var descriptionCell = row.insertCell(3);
 
         NamaCell.innerHTML = data[i].Nama;
         EmailCell.innerHTML = data[i].Email;
         PilihanCell.innerHTML = data[i].Pilihan;
-        KeteranganCell.innerHTML = data[i].Keterangan;
+        descriptionCell.innerHTML = data[i].description;
         }
     }
-    function deleteItems() {
-        localStorage.clear();
-    }
-
-    displayData();

@@ -34,6 +34,5 @@
     }
     function deleteItems() {
         localStorage.clear();
-    }
-
+      }
     displayData();

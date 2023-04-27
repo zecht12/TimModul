@@ -24,16 +24,11 @@
         var NamaCell = row.insertCell(0);
         var EmailCell = row.insertCell(1);
         var PilihanCell = row.insertCell(2);
-        var KeteranganCell = row.insertCell(3);
+        var descriptionCell = row.insertCell(3);
 
         NamaCell.innerHTML = data[i].Nama;
         EmailCell.innerHTML = data[i].Email;
         PilihanCell.innerHTML = data[i].Pilihan;
-        KeteranganCell.innerHTML = data[i].Keterangan;
+        descriptionCell.innerHTML = data[i].Keterangan;
         }
     }
-    function deleteItems() {
-        localStorage.clear();
-    }
-
-    displayData();

@@ -216,18 +216,24 @@
                     <label for="Email" class="Labelemail">Email yang dapat dihubungi</label>
                     <input type="text" id="Email" name="Email" class="Email">
                 </div>
-                <p style="color: #000; font-weight: bold;">Paket yang anda pilih</p>
-                <select id="Pilihan" name="Pilihan" style="margin-bottom: 5%; width: 50%; height: 30px;">
-                    <option value="Landing Page">Landing Page</option>
-                    <option value="Company Profile">Company Profile</option>
-                    <option value="Online Shop">Online Shop</option>
-                </select><br><br>
+    
+                <p for="Pilihan" class="Pilihan">Paket yang anda pilih</p>
+                <div style="padding-bottom: 5%;" id="Pilihan" >
+                    <input type="radio" id="Pilihan" name="Pilihan" value="Pilihan">
+                    <label for="FrontEnd">Landing Page</label>
+        
+                    <input type="radio" id="Pilihan" name="Pilihan" value="Pilihan">
+                    <label for="BackEnd">Company Profile</label>
+        
+                    <input type="radio" id="Pilihan" name="Pilihan" value="Pilihan">
+                    <label for="FullStack">Online Shop</label><br>
+                </div>
                 <div>
                     <p style="color: black; font-weight: bold; padding-bottom: 1%;">Keterangan Secara lengkap</p>
                     <input type="text" id="Keterangan" name="Keterangan" class="Keterangan" style="width: 100%; height: 150px; margin-bottom: 10%; font-size: medium; ">
                 </div>
                 <div style="display: flex; justify-content: center; align-items: center;">
-                    <input type="button" value="Save" id="Save" onclick="saveData()">
+                    <input type="button" value="Save" id="Save" onclick="testVariable()">
                 </div>
             </form>
         </div>
@@ -235,19 +241,20 @@
     <h1 style="margin-top: 2%; text-align: center;">Daftar Pesanan</h1>
     <p style="text-align: center; font: caption;">Riwayat pesanan wbsite di situs kami</p>
     <div id="Dokumen" style="display: flex; justify-content: center; align-items: center; width: 100%;">
-        <table id="data-table">
-            <thead>
-                <tr>
-                    <th>Nama lengkap</th>
-                    <th>Email</th>
-                    <th>Jasa yang dipilih</th>
-                    <th>Keterangan Secara lengkap</th>
-                </tr>
-            </thead>
+        <table id="customers">
+            <tr>
+                <th>Nama lengkap</th>
+                <th>Email</th>
+                <th>Jasa yang dipilih</th>
+                <th>Keterangan Secara lengkap</th>
+            </tr>
+            <tr>
+                <td id="saved-data"></td>
+                <td id="saved-data"></td>
+                <td id="saved-data"></td>
+                <td id="saved-data"></td>
+            </tr>
         </table>
-    </div>
-    <div style="display: flex; justify-content: center; align-items: center; padding: 2%;">
-        <button onclick="deleteItems()" id="deleteItems" class="deleteItems" style="padding: 1%; color: #000; border-color: #000; background-color: #fff; cursor: pointer;">Hapus data</button>
     </div>
     <div style="height: 70vh; width: 100%; background-color: white; margin: auto; justify-content: center; align-items: center;">
         <div style="padding: 5%;">

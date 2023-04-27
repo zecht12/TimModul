@@ -24,7 +24,7 @@
         var NamaCell = row.insertCell(0);
         var EmailCell = row.insertCell(1);
         var PilihanCell = row.insertCell(2);
-        var KeteranganCell = row.insertCell(3);
+        var Cell = row.insertCell(3);
 
         NamaCell.innerHTML = data[i].Nama;
         EmailCell.innerHTML = data[i].Email;
@@ -32,8 +32,3 @@
         KeteranganCell.innerHTML = data[i].Keterangan;
         }
     }
-    function deleteItems() {
-        localStorage.clear();
-    }
-
-    displayData();
