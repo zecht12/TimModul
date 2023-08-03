@@ -39,5 +39,5 @@
     }
     function deleteItems() {
         localStorage.clear();
-    }
+    }z
     displayData();
